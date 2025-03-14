@@ -17,7 +17,7 @@ def load_image(img):
 @st.cache
 def load_data():
     return pd.read_excel(
-        io="List_QR.xlsx",
+        io="List_QR_SBB3.xlsx",
         engine="openpyxl",
         sheet_name="Customer",
         nrows=20000
@@ -28,7 +28,7 @@ with st.form(key='myqr_form'):
     raw_text = st.text_area("Input Kode Outlet disini (Kode Huruf Menggunakan Huruf Kapital)", max_chars=8)
     submit_button = st.form_submit_button("Generate")
     df = pd.read_excel(
-        io="List_QR.xlsx",
+        io="List_QR_SBB3.xlsx",
         engine="openpyxl",
         sheet_name="Customer",
         usecols="B:H",
