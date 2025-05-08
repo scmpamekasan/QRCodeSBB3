@@ -14,7 +14,7 @@ def load_image(img):
     im = Image.open(img)
     return im
 
-st.cache_data
+@st.cache
 def load_data():
     return pd.read_excel(
         io="List_QR_SBB3new.xlsx",
