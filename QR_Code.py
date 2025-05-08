@@ -17,7 +17,7 @@ def load_image(img):
 st.cache_resource
 def load_data():
     return pd.read_excel(
-        io="List_QR_SBB3.xlsx",
+        io="List_QR_SBB3new.xlsx",
         engine="openpyxl",
         sheet_name="Customer",
         nrows=20000
