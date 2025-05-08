@@ -28,7 +28,7 @@ with st.form(key='myqr_form'):
     raw_text = st.text_area("Input Kode Outlet disini (Kode Huruf Menggunakan Huruf Kapital)", max_chars=8)
     submit_button = st.form_submit_button("Generate")
     df = pd.read_excel(
-        io="List_QR_SBB3.xlsx",
+        io="List_QR_SBB3new.xlsx",
         engine="openpyxl",
         sheet_name="Customer",
         usecols="B:H",
