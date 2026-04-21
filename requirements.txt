@@ -1,6 +1,6 @@
 streamlit
-pandas
+pandas == 3.0.2
 numpy
 qrcode
 pillow
-openpyxl == 3.1.0
+openpyxl == 3.1.5
